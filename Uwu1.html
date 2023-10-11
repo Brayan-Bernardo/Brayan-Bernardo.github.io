@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación de Escritorio</title>
+    <link rel="stylesheet" href="Uwu2.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Aplicación de Escritorio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="pago.html">Pagar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contenido">
+            <h2>Bienvenido a Mi Aplicación de Escritorio</h2>
+            <p>Esta es una increíble aplicación de escritorio que hará tu vida más fácil.</p>
+        </section>
+
+        <section id="comprar">
+            <h2>¿Listo para Obtener la Aplicación?</h2>
+            <p>Para descargar la aplicación de escritorio, por favor realiza el pago o ingresa el código especial.</p>
+            <a href="pago.html">Realizar Pago</a>
+            <p>¿Ya pagaste? <a href="Uwu.exe">Haz clic aquí para descargar la aplicación.</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mi Aplicación de Escritorio</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    // Obtén los elementos de los enlaces de pago y descarga
+    var enlacePago = document.querySelector("https://www.youtube.com/watch?v=IogvfLG32pI&ab_channel=IsraChan");
+    var enlaceDescarga = document.querySelector("#enlaceDescarga");
+
+    // Agrega un evento de clic al enlace de pago
+    enlacePago.addEventListener("click", function (event) {
+        event.preventDefault(); // Evita que el enlace de pago redireccione
+        // Simula una respuesta exitosa del pago (puedes personalizar esto según tu lógica)
+        var pagoExitoso = confirm("¿Pago exitoso?");
+
+        if (pagoExitoso) {
+            // Si el pago es exitoso, habilita el enlace de descarga
+            enlaceDescarga.style.display = "block";
+        }
+    });
+</script>
+
